@@ -65,10 +65,6 @@ hr {
   font-weight: bolder;
 }
 
-.selected-section {
-  color: var(--primaryColor);
-}
-
 /* DESIGN LOGO START */
 .logo {
   color: var(--secondaryColor);
@@ -150,7 +146,7 @@ aside h1 {
 
 .section {
   padding: 0 0px;
-  height: 80vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -188,22 +184,28 @@ aside h1 {
   flex-direction: column;
 }
 
+.thanks-section {
+  height: 100%;
+}
+
 /* STYLE FOOTER START */
 .footer {
   display: flex;
   justify-content: space-between;
   width: calc(100% - 48px);
+  margin-bottom: 16px;
 }
 .footer img {
   height: 48px;
 }
-.footer span,
-.footer span span {
+.footer p,
+.footer p span {
   font-weight: bolder;
   font-size: 0.6em;
   color: var(--primaryColor);
   display: inline-flex;
   align-items: flex-end;
+  margin: 0;
 }
 /* STYLE FOOTER END */
 
