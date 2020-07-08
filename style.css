@@ -14,6 +14,9 @@ body {
 a {
   text-decoration: none;
 }
+p {
+  font-size: small;
+}
 
 ul li {
   list-style-type: none;
@@ -133,7 +136,7 @@ aside h1 {
 .content-wrapper .section-tag p {
   margin: 0;
   color: var(--tertiaryColor);
-  font-size: 0.2em;
+  font-size: 0.5em;
   font-weight: bold;
   padding: 24px 48px;
   letter-spacing: 0.1em;
@@ -194,7 +197,8 @@ aside h1 {
 .footer img {
   height: 48px;
 }
-.footer span {
+.footer span,
+.footer span span {
   font-weight: bolder;
   font-size: 0.6em;
   color: var(--primaryColor);
@@ -217,7 +221,7 @@ aside h1 {
     font-size: 0.9em;
   }
   .welcome p {
-    font-size: 0.1em;
+    font-size: 0.5em;
   }
   .personal-img {
     height: 96px;
