@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  --primaryColor: #4a4a4a;
+  --secondaryColor: #707070;
+  --tertiaryColor: #ababab;
+  --lightGray: #fafafa;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+h1 {
+  color: var(--primaryColor);
+  font-size: 3em;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--tertiaryColor);
+  margin: 0.5em 1em;
+}
+
+p {
+  line-height: 1.5em;
+  font-size: 0.9em;
+}
+
+hr {
+  margin: 0 48px;
+  border: 1px solid var(--tertiaryColor);
+}
+.section .heading span {
+  color: var(--secondaryColor);
+  font-weight: bolder;
+}
+
+.center-text {
+  text-align: center;
+}
+.center-items {
+  align-items: center;
+}
+
+#email {
+  color: var(--tertiaryColor);
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.selected-section {
+  color: var(--primaryColor);
+}
+
+/* DESIGN LOGO START */
+.logo {
+  color: var(--secondaryColor);
+  text-decoration: none;
+}
+.logo span {
+  color: var(--tertiaryColor);
+}
+header .logo {
+  font-size: 1em;
+  display: inline;
+}
+/* DESIGN LOGO END */
+
+/* DESIGN HEADER START */
+header {
+  padding: 0.8em 1.2em;
+  background-color: var(--lightGray);
+  display: flex;
+  justify-content: center;
+}
+
+/* DESIGN HEADER END */
+
+/* ASIDE DESIGN START */
+aside {
+  background-color: var(--lightGray);
+  width: 25%;
+  padding: 85px 75px 50px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 135px);
+  justify-content: space-between;
+}
+aside h1 {
+  margin: 0;
+}
+.main-menu li {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  line-height: 2.2em;
+  display: block;
+}
+.main-menu a {
+  color: var(--tertiaryColor);
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+.social li a img {
+  max-width: 20px;
+}
+/* ASIDE DESIGN END */
+
+/* CONTENT WRAPPER DESIGN START */
+.content-wrapper {
+  position: static;
+  overflow: visible;
+  width: auto;
+  margin-left: calc(25% + 150px);
+}
+.content-wrapper .section-tag p {
+  margin: 0;
+  color: var(--tertiaryColor);
+  font-size: 0.2em;
+  font-weight: bold;
+  padding: 24px 48px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.content-wrapper .container {
+  height: 85vh;
+  padding: 0 15%;
+}
+/* CONTENT WRAPPER DESIGN END */
+
+.section {
+  padding: 0 0px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* STYLE ME SECTION START */
+.personal-img {
+  height: 128px;
+  width: 128px;
+}
+.me-heading {
+  display: flex;
+}
+.me-heading .welcome {
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.me-heading .welcome p,
+.me-heading .welcome h1 {
+  margin: 0;
+}
+.me-heading .welcome p {
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: var(--tertiaryColor);
+  padding-left: 8px;
+}
+/* STYLE ME SECTION END */
+
+.vertical-space-between {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+/* STYLE FOOTER START */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 48px);
+}
+.footer img {
+  height: 48px;
+}
+.footer span {
+  font-weight: bolder;
+  font-size: 0.6em;
+  color: var(--primaryColor);
+  display: inline-flex;
+  align-items: flex-end;
+}
+/* STYLE FOOTER END */
+
+/* Hide aside for mobile and hide navBar for desktop */
+@media (min-width: 991px) {
+  .hide-desktop {
+    display: none;
+  }
+}
+@media (max-width: 990px) {
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 0.9em;
+  }
+  .welcome p {
+    font-size: 0.1em;
+  }
+  .personal-img {
+    height: 96px;
+    width: 96px;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+  .content-wrapper {
+    margin: 0;
+  }
+  .footer img {
+    height: 32px;
+  }
+  .footer span {
+    font-size: 0.4em;
+  }
+}
+/* Omar Alsaeidi */
